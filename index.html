@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarea - S7</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Byron Manchego</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="/sobremi.html">Sobre Mi</a></li>
+          <li><a href="/experiencia.html">Experiencia</a></li>
+          <li><a href="/contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Byron Manchego</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="/sobremi.html" onclick="toggleMenu()">Sobre mi</a></li>
+          <li><a href="/experiencia.html" onclick="toggleMenu()">Experiencia</a></li>
+          <li><a href="/contacto.html" onclick="toggleMenu()">Contacto</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/foto.jpg" alt="byron" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hola soy</p>
+        <h1 class="title">Byron Manchego</h1>
+        <p class="section__text__p2">Frontend / Backend /  Developer</p>
+
+        <div id="socials-container">
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/ByronMG'"
+          />
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
